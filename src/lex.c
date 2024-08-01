@@ -6,15 +6,8 @@ typedef struct Lexer {
 } Lexer;
 
 static Token next(Lexer* l) {
-    if (l->cursor >= l->text.len) {
-        return (Token){
-            .raw = &l->text.raw[l->text.len - 1],
-            .len = 0, 
-            .type = TOK_EOF};
-    }
-
     while (l->cursor >= l->text.len) {
-        
+
     }
 }
 

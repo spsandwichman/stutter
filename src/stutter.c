@@ -2,5 +2,10 @@
 #include "stutter.h"
 
 int main() {
-    printf("yurt\n");
+    da(Token) token_stream = lex(str("yuh"));
+
+    u32 current = 0;
+    Expr* program = parse_list(token_stream.at, &current);
+
+    print_expr(program, 0);
 }

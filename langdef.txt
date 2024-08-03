@@ -1,0 +1,11 @@
+(var <name> <value>)
+    define a new variable.
+
+(fn <name> <params> <value>)
+    define a new function. functions are like closures.
+
+(= <loc> <value>)
+    general purpose assignment.
+
+(if <cond> <then> <else>)
+    if <cond> is not null, evaluate and return <then>, otherwise <else>.
